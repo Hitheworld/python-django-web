@@ -10,8 +10,8 @@ django object
 	url(r'^blog/index/$', views.index, name='index')
 7、edit blog/views.py
 	<code>
-	from django.http import HttpResponse
-	def index(req)：
+	from django.http import HttpResponse<br />
+	def index(req)：<br />
 		return HttpResponse('\<h1\>Hello World\<h2\>')
 	</code>
 8、python manager.py runserver
