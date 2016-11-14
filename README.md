@@ -1,4 +1,4 @@
-django object
+###django object
 
 1、install python
 2、django install 
