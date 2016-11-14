@@ -12,7 +12,7 @@ django object
 	<code>
 	from django.http import HttpResponse
 	def index(req)：
-		return HttpResponse('<h1>Hello World<h2>')
+		return HttpResponse('\<h1\>Hello World\<h2\>')
 	</code>
 8、python manager.py runserver
 
