@@ -26,9 +26,12 @@ mysql -uroot -proot
 MySQLdb:
  	http://www.codegood.com/downloads
 
+MySQLGUI:
+    MySQL-Front
 
 django:
 	python manage.py migrate
 	python manage.py createsuperuser
+
 
 
