@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from models import  PhoneModel
 
 class Person(object):
 	def __init__(self, name, age, sex):
@@ -15,3 +16,9 @@ def index(req):
 	usre = {'name':'tom', 'age': 23, 'sex':'male'}
 	book_list = ['python', 'java', 'php']
 	return render(req, "index.html",{})
+
+
+# entry = PhoneModel(name='lidong')
+# entry.phone = '13410320008'
+# entry.save()
+# resp = "hello %s , phone :%s" % (entry.name, entry.phone)

@@ -31,6 +31,10 @@ MySQLdb:
 MySQLGUI:
     MySQL-Front
 
+
+# Mongodb
+sc.exe create MongoDB binPath= "D:\MongoDB\Server\3.2\bin\mongod.exe --service --config=\"D:\MongoDB\Server\3.2\mongodb.cfg\"" DisplayName= "MongoDB" start= "auto"
+
 django:
 	python manage.py migrate
 	python manage.py createsuperuser

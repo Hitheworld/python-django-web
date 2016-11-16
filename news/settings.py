@@ -12,6 +12,37 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+# from mongoengine import register_connection
+
+"""Add a connection.
+
+    参数 alias:将用于引用此连接的名称在 MongoEngine
+    参数 name: 指定要使用的特定数据库的名称
+    参数 host: 主机名称 程序: 实例连接到`mongod`
+    参数 port: 该端口：` mongod `实例上运行
+    参数 read_preference: 集合的阅读偏好
+       ** Added pymongo 2.1
+    参数 username: 用户名与身份验证
+    参数 password: 用的密码进行身份验证
+    参数 authentication_source: 数据库进行身份验证
+    参数 is_mock: 明确使用mongomock这个连接
+        (也可以用` mongomock：/ / `作为数据库主机前缀)
+    参数 kwargs: 允许特定的参数被传递到pymongo司机
+
+    .. versionchanged:: 0.10.6 - 添加mongomock支持
+    """
+
+# mongoengine.register_connection(
+#     alias,
+#     name=None,
+#     host=None,
+#     port=None,
+#     read_preference=Primary(),
+#     username=None,
+#     password=None,
+#     authentication_source=None,
+#     **kwargs
+# )
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
