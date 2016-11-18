@@ -14,7 +14,7 @@
 	def index(req)：<br />
 		return HttpResponse('\<h1\>Hello World\<h2\>')
 	</code>
-8、python manager.py runserver
+8、python manage.py runserver
 
 
 MySql: 
@@ -34,6 +34,8 @@ MySQLGUI:
 
 # Mongodb
 sc.exe create MongoDB binPath= "D:\MongoDB\Server\3.2\bin\mongod.exe --service --config=\"D:\MongoDB\Server\3.2\mongodb.cfg\"" DisplayName= "MongoDB" start= "auto"
+mongod --dbpath D:\MongoDB\data\db
+mongod --config D:\MongoDB\mongo.config --install --serviceName "MongoDB"
 
 django:
 	python manage.py migrate
